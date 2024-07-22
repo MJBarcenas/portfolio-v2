@@ -1,0 +1,20 @@
+:root {
+    --font-primary-color: #f7f6f7;
+    --primary-color: #121113;
+    --secondary-color: #1f1e1f;
+    --accent-color: #ebc583;
+    --card-primary-color: #2c2b2c;
+    --card-secondary-color: #212024;
+    --card-accent-color: #282729;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--font-primary-color);
+}
