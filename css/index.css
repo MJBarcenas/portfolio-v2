@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
     --font-primary-color: #f7f6f7;
     --primary-color: #121113;
@@ -6,15 +8,43 @@
     --card-primary-color: #2c2b2c;
     --card-secondary-color: #212024;
     --card-accent-color: #282729;
+    --small-gap: .25rem;
+    --medium-gap: .5rem;
+    --large-gap: .75rem;
+    --xlarge-gap: 1rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "DM Sans";
 }
 
 body {
+    /* border: 1px solid red; */
     background-color: var(--primary-color);
     color: var(--font-primary-color);
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: var(--large-gap);
+}
+
+body>* {
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    padding: calc(var(--xlarge-gap) + var(--medium-gap));
+}
+
+.profile-main {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.125);
 }
